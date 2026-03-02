@@ -36,20 +36,30 @@ ECF_3_Clement_Raczek/
 --- 
 
 
-Insallation
-# Cloner le projet
-git clone [https://github.com/votre-compte/ecf_telecom_churn.git](https://github.com/votre-compte/ecf_telecom_churn.git)
-cd ecf_telecom_churn
+## Installation et Configuration de l'Environnement
 
-# Créer l'environnement virtuel
+### 1. Récupération du projet
+# Clonage du dépôt distant vers la machine locale
+git clone https://github.com/clementraczek/ECF3-CLEMENT-RACZEK.git
+
+# Déplacement dans le répertoire racine du projet
+# Note : veillez à ce que le nom du dossier corresponde au dépôt cloné
+cd ECF3-CLEMENT-RACZEK
+
+### 2. Gestion de l'environnement virtuel
+# Création d'un environnement isolé pour éviter les conflits de dépendances
 python -m venv venv
 
-# Activer l'environnement
-# Sur Windows :
+# Activation de l'environnement virtuel
+# Procédure pour Windows (PowerShell / CMD) :
 .\venv\Scripts\activate
-# Sur Mac/Linux :
-source venv/bin/activate
 
-# Installer les dépendances
+# Procédure pour systèmes Unix (Linux / macOS) :
+# source venv/bin/activate
+
+### 3. Installation des dépendances
+# Mise à jour du gestionnaire de paquets pip pour garantir la compatibilité
 pip install --upgrade pip
+
+# Installation groupée des bibliothèques nécessaires (Pandas, Scikit-Learn, PySpark, etc.)
 pip install -r requirements.txt

@@ -3,16 +3,11 @@
 venv/
 
 
-
 __pycache__/
 *.py[cod]
 
 
 data/*.csv
-output/consommations_clean/**
-output/consommations_enrichies.csv
-output/consommations_enrichies.parquet
-
 
 
 .vscode/
