@@ -1,0 +1,5 @@
+Framework,Modèle,F1-Score
+Scikit-learn,Logistic Regression,0.35
+Spark MLlib,Logistic Regression,0.6918284508434072
+Scikit-learn,Random Forest,0.18
+Spark MLlib,Random Forest,0.7924220177087354

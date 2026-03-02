@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  spark-app:
+    build: .
+    container_name: ecf3_clement_container
+    # On lance le script Python converti dans le dossier notebooks
+    command: python notebooks/spark.py
+    volumes:
+      - .:/app
+    environment:
+      - SPARK_HOME=/usr/local/lib/python3.11/site-packages/pyspark
+      - PYSPARK_PYTHON=python3
+    # Optionnel : évite que le conteneur s'arrête immédiatement en cas d'erreur 
+    # pour te laisser le temps de lire les logs
+    stdin_open: true
+    tty: true
+
+networks:
+  default:
+    name: ecf_3_clement_raczek_default

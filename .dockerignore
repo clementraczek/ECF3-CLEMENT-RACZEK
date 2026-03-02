@@ -1,0 +1,15 @@
+# Empêcher Docker de copier l'environnement virtuel local
+venv/
+.venv/
+env/
+
+# Empêcher de copier les données (on utilisera des volumes à la place)
+data/
+output/
+
+# Divers
+.git/
+.gitignore
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
